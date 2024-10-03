@@ -27,13 +27,6 @@ public class ReverseString{
 		}
 	    }
 	}
-
-
-	for(int count = 0; count > words.length; count++){
-	   
-		System.out.print(getReverse(sentences));
-	}
-
    }
 }
 
