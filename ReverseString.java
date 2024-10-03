@@ -2,30 +2,20 @@ public class ReverseString{
 
    public static void main(String [] args){
 
-	String sentences = "there is a tide in the affairs of men";
+	String [] sentences = {"there", "is", "a", "tide", "in", "the", "affairs", "of", "men"};
+	
+	getReverse(sentences);
 
    }
 
 
-   public static void getReverse(String sentence){
-
-	String [] words = {(sentence)};
+   public static void getReverse(String [] words){
 
 	int lengthOfWords = words.length;
-	
-	for(int index = 0; index < lengthOfWords; index++){
 
-	    for(int count = lengthOfWords - 1; count > index; count--){
+	for(int count = lengthOfWords - 1; count >= 0; count--){
 
-	        if(words[count] > words[index]){
-
-		    int temp = words[index];
-		    
-		    words[index] = words[count];
-
-		    words[count] = temp;	
-		}
-	    }
+	     System.out.print(words[count] + " ");
 	}
    }
 }
