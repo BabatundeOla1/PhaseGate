@@ -4,6 +4,9 @@ public class ReverseString{
 
 	String sentences = "there is a men";
 
+	getReverse(sentences);
+	
+
    }
 
 
@@ -13,9 +16,9 @@ public class ReverseString{
 
 	int lengthOfWords = words.length;
 
-	    for(int count = lengthOfWords - 1; count > index; count--){
+	    for(int count = lengthOfWords - 1; count > 0; count--){
 
-	      	System.out.print(words[count])
+	      	System.out.print(words[count] + " ");
 	    }
    }
 }
