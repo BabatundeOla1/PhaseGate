@@ -12,21 +12,11 @@ public class ReverseString{
 	String [] words = {(sentence)};
 
 	int lengthOfWords = words.length;
-	
-	for(int index = 0; index < lengthOfWords; index++){
 
 	    for(int count = lengthOfWords - 1; count > index; count--){
 
-	        if(words[count] > words[index]){
-
-		    int temp = words[index];
-		    
-		    words[index] = words[count];
-
-		    words[count] = temp;	
-		}
+	      	System.out.print(words[count])
 	    }
-	}
    }
 }
 
