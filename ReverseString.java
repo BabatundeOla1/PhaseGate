@@ -2,7 +2,7 @@ public class ReverseString{
 
    public static void main(String [] args){
 
-	String [] sentences = {"there", "is", "a", "tide", "in", "the", "affairs", "of", "men"};
+     String [] sentences = {"there", "is", "a", "tide", "in", "the", "affairs", "of", "men"};
 	
 	getReverse(sentences);
 
@@ -11,9 +11,7 @@ public class ReverseString{
 
    public static void getReverse(String [] words){
 
-	int lengthOfWords = words.length;
-
-	for(int count = lengthOfWords - 1; count >= 0; count--){
+	for(int count = words.length - 1; count >= 0; count--){
 
 	     System.out.print(words[count] + " ");
 	}

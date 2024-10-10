@@ -6,16 +6,13 @@ public class SortedSquaredNumbers{
 
 	int [] numbers = {2, 1, 4, 3, 5, 9};
 
-	int [] squareNum = getSquare(numbers);
-	
+	System.out.println("Original Number: " + Arrays.toString(numbers));
 
+	System.out.println("Square Numbers: " + Arrays.toString(getSquare(numbers)));
 
-	getsortNumbers(squareNum);
-
-	System.out.println(Arrays.toString(squareNum));
+	System.out.print("Sorted Square Numbers: " + Arrays.toString(getsortNumbers(getSquare(numbers))));
 
    }
-
 
    public static int[] getSquare(int [] elements){
 
@@ -25,18 +22,15 @@ public class SortedSquaredNumbers{
 		square[count] = elements[count] * elements[count];
 
 	}
-		return square;
 
+		return square;
    }
 
+   public static int [] getsortNumbers(int [] array){
 
-   public static void getsortNumbers(int [] array){
-
-	int lengthOfArray = array.length;
-
-	for(int index = 0; index < lengthOfArray; index++){
+	for(int index = 0; index < array.length; index++){
 		
-		for(int counter = 1; counter < lengthOfArray; counter++){
+		for(int counter = 1; counter < array.length; counter++){
 
  			if(array[counter - 1] > array[counter]){
 
@@ -48,6 +42,8 @@ public class SortedSquaredNumbers{
 			}
 		}
 	}
+
+	return array;
 	
    }
 
